@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathushayar Prompt AI - AI Image Prompts in Hindi</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family:'Arial',sans-serif}
+        body {background:#0f0f0f; color:#fff; line-height:1.6}
+        .header {background:linear-gradient(135deg,#667eea 0%,#764ba2 100%); padding:2rem; text-align:center}
+        .header h1 {font-size:2.5rem; margin-bottom:0.5rem}
+        .header p {opacity:0.9}
+        .container {max-width:1200px; margin:2rem auto; padding:0 1rem}
+        .prompt-card {background:#1a1a1a; border:1px solid #333; border-radius:12px; padding:1.5rem; margin-bottom:1.5rem}
+        .prompt-card h3 {color:#667eea; margin-bottom:1rem}
+        .prompt-text {background:#000; padding:1rem; border-radius:8px; border-left:3px solid #667eea; font-family:monospace; word-wrap:break-word}
+        .copy-btn {background:#667eea; color:white; border:none; padding:0.5rem 1rem; border-radius:6px; margin-top:1rem; cursor:pointer}
+        .copy-btn:hover {background:#764ba2}
+        .footer {text-align:center; padding:2rem; opacity:0.6; margin-top:3rem}
+        .category {display:inline-block; background:#333; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; margin-bottom:1rem}
+        .whatsapp-btn {position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50px; text-decoration:none; font-weight:bold}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nathushayar Prompt AI</h1>
+        <p>Shayari, Stage, Gaming वाले AI Image Prompts - वो भी हिंदी में 🔥</p>
+    </div>
+
+    <div class="container">
+        <div class="prompt-card">
+            <span class="category">Stage Photo</span>
+            <h3>स्टेज पर शायरी वाला लुक</h3>
+            <div class="prompt-text" id="p1">Place the person from reference photo on a professional stage with wooden flooring, standing in front of a mic stand, wearing maroon kurta pajama with gold embroidery, right hand raised in speaking gesture, warm golden spotlight from top left, dark blurred auditorium background, glowing circular "Nathushayar" sign behind, cinematic portrait, 8K ultra realistic, same face as reference photo, detailed</div>
+            <button class="copy-btn" onclick="copyText('p1')">Copy Prompt</button>
+        </div>
+
+        <div class="prompt-card">
+            <span class="category">Gaming</span>
+            <h3>Free Fire वाला गेमर लुक</h3>
+            <div class="prompt-text" id="p2">Place the person from reference photo in Free Fire battleground, wearing gaming headset and tactical vest, holding M1887 gun, dramatic fire explosion background, cinematic lighting, victory pose, esports style, 8K ultra realistic, same face as reference photo</div>
+            <button class="copy-btn" onclick="copyText('p2')">Copy Prompt</button>
+        </div>
+
+        <div class="prompt-card">
+            <span class="category">Stadium</span>
+            <h3>क्रिकेट स्टेडियम वाला हीरो लुक</h3>
+            <div class="prompt-text" id="p3">Put the person from this image in Wankhede Stadium at night, standing on pitch under bright floodlights, full stadium crowd cheering in background, wearing Indian cricket team blue jersey, holding bat on shoulder, heroic pose, cinematic lighting, confetti falling, ultra realistic, 8K, same face as reference photo</div>
+            <button class="copy-btn" onclick="copyText('p3')">Copy Prompt</button>
+        </div>
+
+        <div class="prompt-card">
+            <span class="category">Trending</span>
+            <h3>White Shirt + Black Jacket लुक</h3>
+            <div class="prompt-text" id="p4">Place the person from reference photo on a professional stage with wooden flooring, standing in front of a mic stand, wearing white embroidered shirt, black jacket with jeans, right hand raised in speaking gesture, warm golden spotlight from top left, dark blurred auditorium background, glowing circular "Nathushayar" sign behind, cinematic portrait, 8K ultra realistic, same face as reference photo, detailed</div>
+            <button class="copy-btn" onclick="copyText('p4')">Copy Prompt</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn" target="_blank">WhatsApp Me</a>
+
+    <div class="footer">
+        <p>Made with ❤️ by Nathushayar | Free AI Prompts for Everyone</p>
+    </div>
+
+    <script>
+        function copyText(id) {
+            const text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text);
+            alert('Prompt Copy हो गया भाई ✅');
+        }
+    </script>
+</body>
+  </html>
